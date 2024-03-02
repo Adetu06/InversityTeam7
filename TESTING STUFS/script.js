@@ -46,4 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Attach click event listener to submit button
     submitButton.addEventListener("click", openNewPage);
-});
+
+    var currentImageIndex = 0;
+        var images = [
+            "tim-meyer-GIm7wxiAZys-unsplash.jpg","family%20car.webp"
+            // Add more image URLs as needed
+        ];
+
+        function showImage(index) {
+            var image = document.querySelector('.image-container img');
+            image.src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+})
