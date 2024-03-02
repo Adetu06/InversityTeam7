@@ -34,3 +34,10 @@ input[type="text"], input[type="range"] {
     margin-left:10px;
     width: 1000px;
 }
+
+.template{
+    height:400px;
+    width:1000px;
+    background-color:white;
+    margin-bottom: 10px;
+}
