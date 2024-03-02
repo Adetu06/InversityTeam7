@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const costSlider = document.getElementById("cost");
     const costValue = document.getElementById("cost-value");
 
+    // Get the submit button
+    const submitButton = document.getElementById("submit-btn");
+
     // Function to calculate the cost based on battery capacity and power output
     function calculateCost() {
         // You can customize this formula based on your specific requirements
@@ -26,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         costValue.textContent = cost;
     }
 
+    // Function to open a new webpage on button click
+    function openNewPage() {
+        // Customize the URL of the new webpage
+        const newPageURL = "http://127.0.0.1:5500/TESTING%20STUFS/result.html";
+        window.open(newPageURL, "_blank");
+    }
+
     // Attach input event listeners to dimensions inputs
     widthInput.addEventListener("input", calculateCost);
     lengthInput.addEventListener("input", calculateCost);
@@ -34,4 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach input event listeners to sliders
     batteryCapacitySlider.addEventListener("input", calculateCost);
     powerOutputSlider.addEventListener("input", calculateCost);
+
+    // Attach click event listener to submit button
+    submitButton.addEventListener("click", openNewPage);
 });
+
