@@ -21,3 +21,7 @@ body {
 input[type="text"], input[type="range"] {
     margin: 5px;
 }
+
+.section{
+    background-color: aquamarine;
+}

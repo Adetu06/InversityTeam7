@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dimensions-container">
-        <label for="width">Width:</label>
-        <input type="text" id="width" placeholder="Enter width">
-        
-        <label for="length">Length:</label>
-        <input type="text" id="length" placeholder="Enter length">
-        
-        <label for="height">Height:</label>
-        <input type="text" id="height" placeholder="Enter height">
-    </div>
+    <section class = "input_container">
+        <div class="dimensions-container">
+            <label for="width">Width:</label>
+            <input type="text" id="width" placeholder="Enter width">
+            
+            <label for="length">Length:</label>
+            <input type="text" id="length" placeholder="Enter length">
+            
+            <label for="height">Height:</label>
+            <input type="text" id="height" placeholder="Enter height">
+        </div>
+    
+        <div class="slider-container">
+            <label for="battery-capacity">Battery Capacity:</label>
+            <input type="range" id="battery-capacity" min="0" max="100" value="50">
+    
+            <label for="power-output">Power Output:</label>
+            <input type="range" id="power-output" min="0" max="100" value="50">
+    
+            <label for="cost">Cost:</label>
+            <input type="range" id="cost" min="0" max="100" value="50" disabled>
+            <p id="cost-value">50</p>
+        </div>
+    </sectionsection>
 
-    <div class="slider-container">
-        <label for="battery-capacity">Battery Capacity:</label>
-        <input type="range" id="battery-capacity" min="0" max="100" value="50">
-
-        <label for="power-output">Power Output:</label>
-        <input type="range" id="power-output" min="0" max="100" value="50">
-
-        <label for="cost">Cost:</label>
-        <input type="range" id="cost" min="0" max="100" value="50" disabled>
-        <p id="cost-value">50</p>
-    </div>
 
     <script src="script.js"></script>
 </body>
