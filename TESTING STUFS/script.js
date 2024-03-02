@@ -31,9 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to open a new webpage on button click
     function openNewPage() {
-        // Customize the URL of the new webpage
-        const newPageURL = "http://127.0.0.1:5500/TESTING%20STUFS/result.html";
-        window.open(newPageURL, "_blank");
+        // Open result.html in a new tab
+        window.open("result.html", "_blank");
     }
 
     // Attach input event listeners to dimensions inputs
@@ -48,4 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach click event listener to submit button
     submitButton.addEventListener("click", openNewPage);
 });
-
