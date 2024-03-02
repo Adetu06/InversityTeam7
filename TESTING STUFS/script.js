@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const powerOutput = parseFloat(powerOutputSlider.value);
 
         // Example formula: cost = (batteryCapacity + powerOutput) * (width + length + height)
-        const cost = (batteryCapacity *87 + powerOutput*87) * (width * length * height) /1000000 * 5;
+        const cost = (batteryCapacity *87 + powerOutput*87) * (width * length * height) /10000000 * 5;
 
         costSlider.value = cost;
         costValue.textContent = cost;
