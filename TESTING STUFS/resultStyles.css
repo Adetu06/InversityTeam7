@@ -22,7 +22,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
 }
-
+.product-box-2 {
+    background-color: #9158e0;
+    border: 1px solid #9158e0;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 0 10px; /* Add margin between boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    color:white;
+}
 .product-box:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -38,7 +48,7 @@ h2 {
 
 .buy-button {
     display: block;
-    background-color: #e44d26; /* Orange color for button */
+    background-color: #81dcf7; /* Orange color for button */
     color: #fff;
     text-decoration: none;
     padding: 10px;
