@@ -1,11 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    background-color: rgb(61, 64, 66);
+    margin:0;
+    color:white;
 }
 
 .dimensions-container {
@@ -14,10 +16,21 @@ body {
     margin-bottom: 20px;
 }
 
+h1{
+    color:aliceblue;
+    
+}
+
 .slider-container {
     text-align: center;
 }
 
 input[type="text"], input[type="range"] {
     margin: 5px;
+}
+
+.input_container{
+    background-color: #81dcf7;
+    margin-left:10px;
+    width: 1000px;
 }
