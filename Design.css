@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(61, 64, 66)
+    background-color: rgb(61, 64, 66);
+    margin: 0;
 }
 h1{
-    
+    color:blue;
 }
